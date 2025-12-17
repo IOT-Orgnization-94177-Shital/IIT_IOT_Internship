@@ -1,0 +1,14 @@
+import os
+print(os.getcwd())
+print(os.listdir())
+if not os.path.exists("test_folder"):
+    os.mkdir("test_folder")
+    print("folder created")
+else:
+    print("folder already exists")
+    path = "parent/child"
+    if not os.path.exists(path):
+        os.makedirs(path)
+        print("folder created")
+    else:
+        print("folder alreay exist")
