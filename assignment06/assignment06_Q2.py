@@ -22,10 +22,10 @@ try:
     cursor.execute(query, (id, moisture_level, timestamp))
     connection.commit()
 
-    print("✅ Data inserted successfully into sensor_reading")
+    print(" Data inserted successfully into sensor_reading")
 
 except mysql.connector.Error as e:
-    print("❌ Error:", e)
+    print("Error:", e)
 
 finally:
     if connection.is_connected():
